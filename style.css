@@ -1,0 +1,224 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Audiowide', sans-serif;
+    background-color: transparent;
+}
+
+/* HEADER */
+header{
+    background: linear-gradient(135deg,#52075b,#6d4076,#ece3e7);
+    box-shadow:0px 0px 10px rgba(0,0,0,0.3);
+}
+
+.headerContainer{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0px 40px;
+} 
+
+/* LOGO */
+.logo img{
+    height:100px;
+}
+
+/* NAVIGATION */
+.ability{
+    display:flex;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+/* NAV LINKS */
+nav a{
+    text-decoration:none;
+    color:rgb(119, 65, 107);
+    font-size:16px;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    transition:0.3s;
+}
+
+/* ICONS */
+.ability img{
+    width:28px;
+    height:28px;
+}
+
+/* HOVER EFFECT */
+nav a:hover{
+    color:white;
+    transform:scale(1.1);
+}
+
+section.home{
+    min-height:100vh;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url("img1.png");
+}
+
+.containerHome{
+    width: 40%;
+    margin-left: 50px;
+    padding-top: 100px;
+    color: azure;
+}
+
+h1.judulHome{
+    font-size: 30px;
+}
+
+h2.subjudulHome{
+    font-size: 30px
+}
+
+.deskripsiHome{
+    font-size: 20px;
+}
+
+/* ABOUT PAGE */
+
+.aboutPage{
+    padding:120px 0;
+    background:#f4f1f6;
+}
+
+.aboutPageContainer{
+    width:60%;
+    margin:auto;
+    text-align:center;
+}
+
+.aboutPageContainer h1{
+    font-size:45px;
+    color:#52075b;
+    margin-bottom:40px;
+}
+
+.aboutPageContainer p{
+    font-size:18px;
+    line-height:1.8;
+    color:#444;
+    margin-bottom:25px;
+}
+
+/* PROFILE PAGE */
+
+.profilePage{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#4e395b;
+}
+
+/* CARD */
+
+.profileCard{
+    background:white;
+    width:320px;
+    padding:40px;
+    text-align:center;
+    border-radius:15px;
+    box-shadow:0px 10px 25px rgba(0,0,0,0.2);
+}
+
+/* PROFILE IMAGE */
+
+.profileImage{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    margin-bottom:20px;
+}
+
+/* SOCIAL MEDIA */
+
+.socialLinks{
+    margin-top:20px;
+}
+
+.socialLinks a{
+    padding:12px;
+    font-size:20px;
+    width:20px;
+    text-align:center;
+    text-decoration:none;
+    margin:5px;
+    border-radius:50%;
+    background:#52075b;
+    color:white;
+    transition:0.3s;
+}
+
+.socialLinks a:hover{
+    background:#6d4076;
+    transform:scale(1.2);
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+.headerContainer{
+    flex-direction:column;
+    align-items:center;
+    padding:5px 10px;
+}
+
+.logo img{
+    height:60px;
+}
+
+.ability{
+    justify-content:center;
+    gap:20px;
+    margin-top:5px;
+}
+
+nav a{
+    font-size:14px;
+}
+
+}
+
+/* HOW TO PAGE */
+
+.howto{
+padding:100px 0;
+background:#f4f1f6;
+}
+
+.howtoContainer{
+width:60%;
+margin:auto;
+}
+
+.howtoContainer h1{
+text-align:center;
+font-size:40px;
+color:#52075b;
+margin-bottom:40px;
+}
+
+.howtoContainer h2{
+color:#6d4076;
+margin-top:30px;
+}
+
+.howtoContainer ul,
+.howtoContainer ol{
+font-size:18px;
+line-height:1.8;
+margin-left:20px;
+}
+
+.howtoContainer p{
+font-size:18px;
+line-height:1.8;
+margin-top:20px;
+}
